@@ -1,0 +1,95 @@
+<!Doctype HTML>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>
+Form
+</title>
+
+<link rel="stylesheet" href="style.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+<form method="POST">
+<div class="wrapper">
+<h1> Login Form </h1>
+<br>
+
+<div class="input-box">
+<label> Name : &nbsp &nbsp</label>
+<input type="text" id="username" name="username" placeholder="name" required>
+<i class='bx bxs-user'></i>
+</div>
+<br>
+<br>
+
+<div class="input-box">
+<label> Email : &nbsp &nbsp</label>
+<input type="email" id="email" placeholder="email" name="email" required>
+<i class='bx bxs-envelope'></i>
+</div>
+<br>
+<br>
+
+<div class="input-box">
+<label> Date of Birth : &nbsp &nbsp</label>
+<input type="date" required>
+</div>
+<br>
+<br>
+
+<div class="input-box">
+<label> Gender: &nbsp &nbsp</label>
+<input type="radio" id="male" name="gender" value="male" required>
+<label for="male">Male</label> &nbsp &nbsp 
+<input type="radio" id="female" name="gender" value="female" required>
+<label for="female">Female</label> &nbsp &nbsp
+<input type="radio" id="other"  name="gender" value="other" required>
+<label for="other">Others</label> &nbsp &nbsp
+</div>
+<br>
+<br>
+
+<form class="group">
+<select id="Country" size="1">
+<option value="" selected="selected">-- Select Country --</option>
+</select>
+<br>
+<br>
+<br>
+
+<select id="State" size="1">
+<option value="" selected="selected">-- Select State --</option>
+</select>
+<br>
+<br>
+<br>
+
+<select id="City" size="1">
+<option value="" selected="selected">-- Select City --</option>
+</select> 
+<br>
+<br>
+<br>
+</form>
+
+<div class="input-box">
+<label> Terms and Conditions : </label>
+<br>
+<input type="checkbox" id = "age" name="age" required>
+<label for="age"> Candidate age should be greater than 20</label>
+<br>
+<input type="checkbox" id = "security" name="security" required>
+<label for="security"> All information are correct </label>
+<br>
+<br>
+</div>
+<button type="submit" value="submit">Submit</button>
+</div>
+</form>
+<script src="main.js"></script>
+</body>
+</html>
